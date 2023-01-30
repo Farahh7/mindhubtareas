@@ -20,14 +20,12 @@ nav{
 	height: 250px;
 	object-fit: cover ;
 	border: 3px solid #000000;
-
 }
 
 .boton1{
     font-size: 20px;
     display: block;
     color: blue;
-   
 }
 .boton2{
     font-size: 20px;
@@ -56,9 +54,6 @@ nav{
     text-align: center;
 }
 
-
-
-
 .logo {
     position: relative;
     border: 2px solid black;
@@ -68,13 +63,9 @@ nav{
 
 .h3{
     font-size: 20px;
-    
-        
 }
 .h4{
     font-size: 60px;
-   
-
 }
 .extra{
     width: 500px;
@@ -83,13 +74,10 @@ nav{
 article{
     border: 2px double black;
     width: 400px;
-   
     float: left;
     
 }
 footer{width: 2000px;
     font-size: 10px;
-
     background-color: #f80505;
-
 }
