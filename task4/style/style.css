@@ -6,24 +6,56 @@
     box-sizing: border-box;
     font-family: "Comic Sans MS";
     color: #000000;
+    background-size: cover;
 
 }
+
+.container {
+    width: 1200px;
+    background: linear-gradient(to right, #030303, #dff703);
+    background-size: 200% 100%;
+    animation: gradientBG 15s ease infinite;
+
+
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 
 nav {
-    display: inline-block;
-    background: black;
-    top: 100px;
-    left: 100px;
-    left: 900px;
-    /*  height: 80px;
-    width: 5000px;
-    border: yellow, 50px; */
+    background-color: black;
+    opacity: 0.7 padding: 10px;
+    display: flex;
+    justify-content: center;
+    margin-left: 200px;
+    margin-top: -110px;
+
 }
 
+,
 
-nav ul {
-    float: right;
-    margin-right: 20px;
+nav {
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+*/ nav ul {
+    /*  float: right;
+        margin-right: 20px; */
 }
 
 nav ul li {
@@ -34,22 +66,24 @@ nav ul li {
 
 nav ul li a {
     color: #fff;
-    font-size: 18px;
+    font-size: 15px;
     padding: 7px 13px;
-    border-radius: 3px;
+    border-radius: 5px;
     text-transform: uppercase;
 }
 
 li a.active,
 li a:hover {
-    background: #000090;
+    background: #0f100c;
+    border: solid #f80505;
     transition: .5s;
 }
 
 
 
 
-@media (max-width: 858px) {
+@media (max-width: 1088px) {
+
     .checkbtn {
         display: block;
     }
@@ -59,8 +93,8 @@ li a:hover {
         width: 100px;
         height: 100vh;
         background: #2c3e50;
-        top: 80px;
-        left: -100%;
+        /* top: 0px;
+        left: -100%; */
         text-align: center;
         transition: all .5s;
     }
@@ -72,7 +106,7 @@ li a:hover {
     }
 
     nav ul li a {
-        font-size: 20px;
+        font-size: 50px;
     }
 
     li a:hover,
@@ -84,14 +118,19 @@ li a:hover {
 }
 
 button {
-    font: 700 1em Tahoma, Arial, Verdana, sans-serif;
-    color: #fff;
+    color: white;
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    /* color: #fff;
     background-color: #59B0E5;
     border: 1px solid #0074a5;
     border-top: 1px solid #004370;
     border-left: 1px solid #004370;
     cursor: pointer;
-    border-bottom: #000000, 5 px;
+    border-bottom: #000000, 5 px; */
 }
 
 head {
@@ -106,10 +145,13 @@ head {
 
 .portada {
     position: relative;
-    width: 1280px;
-    height: 250px;
+    top: 10px;
+    width: 1200px;
+    height: 200px;
     object-fit: cover;
     border: 3px solid #000000;
+    margin: 10px;
+    margin-left: 25px;
 }
 
 .boton1 {
@@ -132,9 +174,11 @@ head {
 
 .h1 {
     position: absolute;
-    top: 0px;
+    top: 10px;
     left: 50px;
     font-size: 50px;
+    color: yellow;
+    -webkit-text-stroke: 1px red
 
 }
 
@@ -148,37 +192,55 @@ head {
 
 .logo {
     position: relative;
-    border: 2px solid black;
-
-    width: 100px;
-    height: 100px;
-    top: 85px;
-    left: 830px;
+    width: 150px;
+    height: 150px;
+    top: 0px;
+    left: 40px;
+    */
 }
 
 
 .extra {
+    position: relative;
+    margin-left: 80px;
     width: 500px;
     border: solid 5px #f80505;
 
 }
 
 .events {
-
-    background-size: cover;
-    background-position: center center;
-    height: calc(100vh - 80px);
+    padding: 20px;
+    /* height: calc(1000vh - 8px); */
     border: 2px double black;
-    height: fit-content;
+    height: max-content 50px;
     float: left;
+    background-color: #bcbcd4;
+    opacity: 0.8;
+    margin: 50px;
 
 }
 
 footer {
+position: relative;
+margin-top: 50px;
+padding: 10px;
+justify-content: center
 
-    width: 2000px;
+    width: 1000px;
     font-size: 10px;
     background-color: #f80505;
+}
+
+.mision {
+    padding: 20px;
+    /* height: calc(1000vh - 8px); */
+    border: 2px double black;
+    height: max-content 50px;
+    float: left;
+    background-color: #bcbcd4;
+    opacity: 0.8;
+    margin: 50px;
+
 }
 
 aside {
@@ -190,7 +252,7 @@ aside {
 
 .lista2 {
     width: 60%;
-    margin: auto;
+    margin: 5px;
     padding: 10px;
     border: dashed;
     background-color: azure;
@@ -200,15 +262,17 @@ aside {
     width: 80%;
     margin: auto;
     padding: 10px;
-    background-color: grey;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.85;
     list-style-position: inside;
+    margin-top: 20px;
 
 }
 
 .titulos {
     text-align: center;
     padding: 10px;
-    background-color: #59B0E5;
+    background-color: #e00505;
 
 }
 
@@ -216,26 +280,32 @@ aside {
     padding: 10px;
 }
 
-#titulo{
-    background-color: #025b81;
-    border: #010101;
+#titulo {
+
+    margin top: 20px;
+   
+    border: solid #010101;
+    text-align: center;
+    padding: 10px;
+    background-color: red ;
+    
 
 }
 
 
 
 .partidos {
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
+    /* display: flex;
+ */    flex-direction: column;
     flex-grow: wrap;
-
     position: absolute;
+    border: solid 2px black;
     top: 700px;
-
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
     color: rgb(150, 148, 148);
-    line-height: 140%;
+    line-height: 100%;
 }
 
 .informacion {
@@ -243,8 +313,9 @@ aside {
     margin-bottom: 2px;
     flex-wrap: wrap;
 
+
     text-align: left;
-    line-height: 140%;
+    line-height: 340%;
     width: 300px;
 
 
@@ -252,6 +323,15 @@ aside {
 
 
 .adicional {
+    padding: 20px;
+    /* height: calc(1000vh - 8px); */
+    border: 2px double black;
+    height: max-content 50px;
+    float: left;
+    background-color: #bcbcd4;
+    opacity: 0.8;
+    margin: 50px;
+    
     display: flex;
     flex-wrap: wrap;
     width: 450px;
@@ -265,11 +345,16 @@ aside {
     background-color: rgb(7, 81, 131);
     position: absolute;
     top: 1100px;
-    left:10px ;
-   
- 
+    left: 10px;
+
+
 }
 
 .mail {
     color: #000090;
+}
+
+table {
+    background-color: #bcbcd4;
+
 }
