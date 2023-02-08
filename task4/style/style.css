@@ -3,7 +3,7 @@
     margin: 0;
     text-decoration: none;
     list-style: none;
-    box-sizing: border-box;
+    box-sizing: content-box;
     font-family: "Comic Sans MS";
     color: #000000;
     background-size: cover;
@@ -292,63 +292,49 @@ aside {
 
 }
 
-
-
-.partidos {
-    display: inline-block;
-    /* display: flex;
- */    flex-direction: column;
+.partidos{
+    display: flex;
+    flex-direction: row;
     flex-grow: wrap;
+    padding-bottom: 5px;
+    
     position: absolute;
+    top: 400px;
+    left: 480px;
+    font-size: 25px;
     border: solid 2px black;
-    top: 700px;
-    font-size: 30px;
-    text-align: center;
-    color: rgb(150, 148, 148);
-    line-height: 100%;
+    opacity: 0.9;
+    
 }
 
+
+
 .informacion {
+    border:solid #000000;
     display: flex;
-    margin-bottom: 2px;
+    background-color: #bcbcd4;
+    padding: 20px;
+    margin-bottom: 10rem;
     flex-wrap: wrap;
+   
+    line-height: 340%;
+    width: 400px;
 
 
-    text-align: left;
+}
+.adicional{
+    border:solid #000000;
+    display: flex;
+    background-color: #bcbcd4;
+    padding: 20px;
+    margin-bottom: 10rem;
+    flex-wrap: wrap;
     line-height: 340%;
     width: 300px;
 
-
 }
 
 
-.adicional {
-    padding: 20px;
-    /* height: calc(1000vh - 8px); */
-    border: 2px double black;
-    height: max-content 50px;
-    float: left;
-    background-color: #bcbcd4;
-    opacity: 0.8;
-    margin: 50px;
-    
-    display: flex;
-    flex-wrap: wrap;
-    width: 450px;
-    height: 200px;
-    line-height: 50%;
-    margin-bottom: 10rem;
-    font-size: 16px;
-    padding: 10px;
-
-    color: black;
-    background-color: rgb(7, 81, 131);
-    position: absolute;
-    top: 1100px;
-    left: 10px;
-
-
-}
 
 .mail {
     color: #000090;
@@ -357,4 +343,42 @@ aside {
 table {
     background-color: #bcbcd4;
 
+}
+.maps{
+    
+    padding: 20px;
+    display: inline-block;
+    margin-inline-start: auto;
+    
+
+}
+.registration{
+    padding: 30px;
+    background-color: #bcbcd4;
+
+}
+
+.margen{
+    padding: 30px;
+    background-color: #bcbcd4;
+   
+
+}
+
+.contact{
+    padding: 20px;
+   
+    border: 2px double black;
+    height: max-content 50px;
+    
+    background-color: #bcbcd4;
+    opacity: 0.8;
+    margin: 50px;
+
+}    
+.email{
+    color: #000090;
+}
+#submit{
+    border: red 2px solid;
 }
