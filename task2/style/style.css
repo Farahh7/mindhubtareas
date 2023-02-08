@@ -1,0 +1,83 @@
+* {
+    font-family: "Comic Sans MS";
+box-sizing: border-box;
+color: #000000;
+
+}
+
+head{
+    width: 500px;
+    height: 100px;
+    
+}
+nav{
+    float: left;
+}
+
+.portada {
+    position: center;
+    width: 1500px;
+	height: 250px;
+	object-fit: cover ;
+	border: 3px solid #000000;
+}
+
+.boton1{
+    font-size: 20px;
+    display: block;
+    color: blue;
+}
+.boton2{
+    font-size: 20px;
+    display: block;
+    margin-top: 50px;
+}
+
+.boton3{
+    font-size: 20px;
+    display: block;
+    margin-top: 50px;
+}
+.h1 {
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    font-size: 50px;
+    
+}
+
+.h2 {
+    background-color: #010101;
+    border: 1px solid black;
+    font-size: 20px;
+    color: rgb(249, 249, 249);
+    text-align: center;
+}
+
+.logo {
+    position: relative;
+    border: 2px solid black;
+    float:right ;
+    width: 100px;
+}
+
+.h3{
+    font-size: 20px;
+}
+.h4{
+    font-size: 60px;
+}
+.extra{
+    width: 500px;
+    border:solid 5px #f80505;
+}
+article{
+    border: 2px double black;
+    width: 400px;
+    float: left;
+    
+}
+footer{width: 2000px;
+    font-size: 10px;
+    background-color: #f80505;
+}
